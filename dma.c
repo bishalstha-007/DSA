@@ -20,7 +20,7 @@ int main() {
     printf("The elements are:\n");
     
     for(i=0; i<n; i++) {
-        printf("ptr[%d] = %d at location of %d\n", i, ptr[i], &ptr[i]);
+        printf("ptr[%d] = %d at location of %p\n", i, ptr[i], &ptr[i]);
     }
 
     free(ptr);
