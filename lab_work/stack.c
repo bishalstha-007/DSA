@@ -69,12 +69,10 @@ int main()
     // display();
     push(3);
     push(6);
-    push(69);
-    push(91);
+    push(9);
     display();
     peek();
-    display();
-    printf("poped value is %d\n", pop());
+    printf("poped value: %d\n", pop());
     peek();
     return 0;
 }

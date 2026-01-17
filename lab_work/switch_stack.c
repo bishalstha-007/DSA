@@ -15,7 +15,7 @@ int main()
 {
     int choice = 0;
 
-    while (choice != 7)
+    while (1)
     {
         printf("1. Check Full\n");
         printf("2. Check Empty\n");
@@ -29,8 +29,7 @@ int main()
 
         switch (choice)
         {
-        case 1:
-            isFull(); 
+        case 1: isFull(); 
             break;
 
         case 2:
@@ -55,7 +54,7 @@ int main()
 
         case 7:
             printf("Exiting program...\n");
-            break;
+            return 0;
 
         default:
             printf("Invalid choice!\n");
@@ -68,17 +67,17 @@ int main()
 void isFull()
 {
     if (top == SIZE - 1)
-        printf("Stack is FULL\n");
+        printf("Stack is full\n");
     else
-        printf("Stack is NOT full\n");
+        printf("Stack is not full\n");
 }
 
 void isEmpty()
 {
     if (top == -1)
-        printf("Stack is EMPTY\n");
+        printf("Stack is empty\n");
     else
-        printf("Stack is NOT empty\n");
+        printf("Stack is not empty\n");
 }
 
 void push()
@@ -93,7 +92,7 @@ void push()
         printf("Enter value: ");
         scanf("%d", &value);
         stack[++top] = value;
-        printf("Value pushed successfully\n");
+        // printf("Value pushed successfully\n");
     }
 }
 
